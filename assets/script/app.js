@@ -1,0 +1,2 @@
+getNameDay('filip');
+getTodaysNameDay();
