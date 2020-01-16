@@ -1,6 +1,6 @@
 
-const getNameDay = async name =>{
-    const response = await fetch(`https://api.abalin.net/getdate?name=${name}&country=se`);
+const getNameDay = async (name, country) =>{
+    const response = await fetch(`https://api.abalin.net/getdate?name=${name}&country=${country}`);
 
     const data = await response.json();
     console.log(data);

@@ -16,15 +16,29 @@
     <form id="search-form">
         <div class="search-container">
             <input class="name" id="name" type="text" placeholder="Sök på namn">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+            <option value="se">Sverige</option>
+            <option value="dk">Danmark</option>
+            <option value="fi">Finland</option>
+            <option value="it">Italien</option>
+            <option value="at">Österike</option>
+            <option value="sk">Slovakien</option>
+            <option value="cz">Tjeckien</option>
+            <option value="es">Spanien</option>
+            <option value="pl">Polen</option>
+            <option value="us">USA</option>
+            <option value="hu">Ungern</option>
+            </select>
             <input type="submit" id="search" name="search" class="search" value="sök">
         </div>
     </form>
 
     <div id="namedays" class="namedays">
-        <p>Du har sökt på <span>Filip</span> </p>
+        <!--<p>Du har sökt på <span>Filip</span> </p>
         <p><span>Filip</span> har namsdag den <span>2/5</span></p>
     </div>
-    
+-->
 
         <script src="assets/script/getname.js"></script>
     <script src="assets/script/app.js"></script>
