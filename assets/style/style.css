@@ -9,19 +9,34 @@ body{
 }
 
 .search-container{
-    height: 50vh;
     max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+.search-container-date{
+    max-width: 900px;
+    padding-top: 2rem;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#name, #country, #search{
+.search-container h2, .search-container-date h2 {
+    color: #f1f2f6;
+    font-size: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 0.3rem;
+}
+
+#name, #country, #search, #month, #date{
     border-radius: 0.3rem;
     width: 7rem;
     height: 2rem;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 

@@ -1,17 +1,15 @@
 
-//HTML teamplate for todys nameday
-const renderTodaysNameday = data => {
-    const todayNameDay = document.querySelector('#today-nameday')
-    //get todays date
-    const today = moment().format("DD/MM");
-    //Make a template for nameday of today
-    todayNameDay.innerHTML = `<p>Idag ${today} har ${data.namedays} namsdag</p>`;
-
-};
 //Get todyas nameday when page load
 window.addEventListener('load', (e) => {
-    getTodaysNameDay().then(data => {
-        renderTodaysNameday(data);
+    getTodaysNameDay().then(data =>{
+        const todayNameDay = document.querySelector('#today-nameday')
+        //get todays date
+        const today = moment().format("DD/MM");
+        //Make a template for nameday of today
+        data.data.forEach(info => {
+            const string = 'se';
+            todayNameDay.innerHTML = `<p>Idag ${today} har ${info.namedays[string]} namsdag</p>`;
+        });
     });
 });
 
