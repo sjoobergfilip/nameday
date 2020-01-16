@@ -32,7 +32,7 @@ body{
     margin-bottom: 0.3rem;
 }
 
-#name, #country, #search, #month, #date{
+#name, #country, #search, #month, #date, #country-form, #search-today, #country-date, #month-date {
     border-radius: 0.3rem;
     width: 7rem;
     height: 2rem;
@@ -40,14 +40,28 @@ body{
 }
 
 
+.container {
+    max-width: 900px;
+    margin: 0 auto; 
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#search-form-today{
+    padding-top: 2rem;
+}
+
 .today-nameday h2,
 .today-nameday p {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     color: #f1f2f6;
-    text-transform: uppercase;
     margin-top: 5rem;
     font-size: 2rem;
+}
+
+.today-nameday p span{
+    text-decoration: underline;
 }
 
 .namedays {
@@ -64,4 +78,8 @@ body{
 
 .namedays span{
     font-weight: bold;
+}
+
+.search-name{
+    text-decoration: underline;
 }

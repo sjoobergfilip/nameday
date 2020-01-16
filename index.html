@@ -11,9 +11,25 @@
 
 </head>
 <body>
-    <h2>Vem har namsdag?</h2>
-    <div id="today-nameday" class="today-nameday">
-       <!-- <p>Idag har Sigurd namsdag</p>-->
+    <div class="container">
+        <div id="today-nameday" class="today-nameday"></div>
+            <form id="search-form-today">
+                <select id="country-form" name="country-form">
+                    <option value="se">Sverige 🇸🇪</option>
+                    <option value="dk">Danmark 🇩🇰</option>
+                    <option value="fi">Finland 🇫🇮</option>
+                    <option value="it">Italien 🇮🇹</option>
+                    <option value="at">Österike 🇦🇹</option>
+                    <option value="sk">Slovakien 🇸🇮</option>
+                    <option value="cz">Tjeckien 🇨🇿</option>
+                    <option value="es">Spanien 🇪🇸</option>
+                    <option value="pl">Polen 🇵🇱</option>
+                    <option value="us">USA 🇺🇸</option>
+                    <option value="hu">Ungern 🇭🇺</option>
+                    <option value="de">Tyskland 🇩🇪</option>
+                </select>
+                <input type="submit" id="search-today" name="search-today" class="search" value="🔍">
+            </form>
     </div>
     <div class="search-container">
         <form id="search-form">
@@ -21,17 +37,17 @@
             <input class="name" id="name" type="text" placeholder="Sök på namn">
             <label for="country"></label>
             <select id="country" name="country">
-            <option value="se">Sverige 🇸🇪</option>
-            <option value="dk">Danmark 🇩🇰</option>
-            <option value="fi">Finland 🇫🇮</option>
-            <option value="it">Italien 🇮🇹</option>
-            <option value="at">Österike 🇦🇹</option>
-            <option value="sk">Slovakien 🇸🇮</option>
-            <option value="cz">Tjeckien 🇨🇿</option>
-            <option value="es">Spanien 🇪🇸</option>
-            <option value="pl">Polen 🇵🇱</option>
-            <option value="us">USA 🇺🇸</option>
-            <option value="hu">Ungern 🇭🇺</option>
+                <option value="se">Sverige 🇸🇪</option>
+                <option value="dk">Danmark 🇩🇰</option>
+                <option value="fi">Finland 🇫🇮</option>
+                <option value="it">Italien 🇮🇹</option>
+                <option value="at">Österike 🇦🇹</option>
+                <option value="sk">Slovakien 🇸🇮</option>
+                <option value="cz">Tjeckien 🇨🇿</option>
+                <option value="es">Spanien 🇪🇸</option>
+                <option value="pl">Polen 🇵🇱</option>
+                <option value="us">USA 🇺🇸</option>
+                <option value="hu">Ungern 🇭🇺</option>
             </select>
             <input type="submit" id="search" name="search" class="search" value="🔍">
         </form>
@@ -72,7 +88,7 @@
                 <option value="30">30</option>
                 <option value="31">31</option>
             </select>
-            <select id="month" name="month">
+            <select id="month-date" name="month-date">
                 <option value="1">Jannuari</option>
                 <option value="2">Feburari</option>
                 <option value="3">Mars</option>
@@ -86,7 +102,7 @@
                 <option value="11">November</option>
                 <option value="12">December</option>
             </select>
-            <select id="country" name="country">
+            <select id="country-date" name="country-date">
                 <option value="se">Sverige 🇸🇪</option>
                 <option value="dk">Danmark 🇩🇰</option>
                 <option value="fi">Finland 🇫🇮</option>
