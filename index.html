@@ -9,12 +9,25 @@
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body>
-    <h2 class="header">Vem har namsdag?</h2>
-<div class="search-container">
-    <input class="name" id="name" type="text" placeholder="Sök på namn">
-</div>
+    <h2>Vem har namsdag?</h2>
+    <div id="today-nameday" class="today-nameday">
+       <!-- <p>Idag har Sigurd namsdag</p>-->
+    </div>
+    <form id="search-form">
+        <div class="search-container">
+            <input class="name" id="name" type="text" placeholder="Sök på namn">
+            <input type="submit" id="search" name="search" class="search" value="sök">
+        </div>
+    </form>
 
-    <script src="assets/script/getname.js"></script>
+    <div id="namedays" class="namedays">
+        <p>Du har sökt på <span>Filip</span> </p>
+        <p><span>Filip</span> har namsdag den <span>2/5</span></p>
+    </div>
+    
+
+        <script src="assets/script/getname.js"></script>
     <script src="assets/script/app.js"></script>
+    <script src="assets/script/moment.js"></script>
 </body>
 </html>

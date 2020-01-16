@@ -10,8 +10,8 @@ const getNameDay = async name =>{
 const getTodaysNameDay = async () =>{
     const response = await fetch('https://api.abalin.net/today?country=se');
     
-    const todayNamday = await response.json();
-    console.log(todayNamday);
-    return todayNamday;
+    const nameday = await response.json();
+    console.log(nameday);
+    return nameday;
 
 };
