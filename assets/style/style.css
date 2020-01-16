@@ -9,7 +9,7 @@ body{
 }
 
 .search-container{
-    height: 70vh;
+    height: 50vh;
     max-width: 900px;
     margin: 0 auto;
     display: flex;
@@ -17,11 +17,13 @@ body{
     align-items: center;
 }
 
-#name{
-    padding: 1.7rem 4rem;
-    display: flex;
-    border-radius: 0.9rem;
+#name, #country, #search{
+    border-radius: 0.3rem;
+    width: 7rem;
+    height: 2rem;
+    font-family: 'Comfortaa', cursive;
 }
+
 
 .today-nameday h2,
 .today-nameday p {
@@ -36,6 +38,7 @@ body{
 .namedays {
     max-width: 900px;
     margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .namedays p {

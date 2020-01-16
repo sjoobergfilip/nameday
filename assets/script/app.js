@@ -34,6 +34,5 @@ document.querySelector('#search-form').addEventListener('submit', e => {
             <p><span>${data.name}</span> har namsdag den <span>${data.day}/${data.month}</span></p>`
         });
         nameDaysEl.innerHTML = output;
-
     });
 });
